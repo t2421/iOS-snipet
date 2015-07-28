@@ -16,7 +16,6 @@ class MainViewController: UITableViewController {
             "itemTitle":"Scroll",
             "itemDescription":"UIScrollViewの可変タイプ",
             "itemPrefix":"Scroll",
-            "url":"https://bitbucket.org/t2421/ios-snipets/src/f786e5176633acac7499e53f2fd8bf1cebfb2262/iOS-snipets/ScrollViewController.swift?at=master"
         ],
         [
             "itemTitle":"Sample2",
@@ -97,7 +96,7 @@ class MainViewController: UITableViewController {
     }
     
     func codeButtonTapped(sender:UIButton){
-        var str = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/ScrollViewController.swift"
+        var str = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/" + self.currentClassName + ".swift"
         var codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: nil)
        // var codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: true)
         codeView.urlString = str
