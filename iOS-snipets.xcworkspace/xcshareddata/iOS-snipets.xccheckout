@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E996BAAD-CCFF-4A2E-9B57-70BFA8EF92DA</string>
+	<string>21B7DCEA-4F0C-49C1-B738-D7905040B730</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOS-snipets</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>324078DE0D9703973FA9A91ED6E0908D7894837B</key>
-		<string>https://bitbucket.org/t2421/ios-snipets.git</string>
+		<string>https://github.com/t2421/iOS-snipet.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS-snipets.xcodeproj</string>
+	<string>iOS-snipets.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>324078DE0D9703973FA9A91ED6E0908D7894837B</key>
-		<string>../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/t2421/ios-snipets.git</string>
+	<string>https://github.com/t2421/iOS-snipet.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

@@ -17,6 +17,7 @@ class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
         super.viewDidLoad()
         self.webview.delegate = self
         startLoad()
+        SVProgressHUD.showWithStatus("loading..." ,maskType: SVProgressHUDMaskType.Gradient)
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +28,7 @@ class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
     
     
     func startLoad(){
-        
+        SVProgressHUD.show()
         if((self.urlString) == nil){
             return;
         }
@@ -39,7 +40,14 @@ class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
         self.webview.loadRequest(request)
         
     }
-
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        SVProgressHUD.dismiss()
+    }
+    
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+        SVProgressHUD.dismiss()
+    }
     /*
     // MARK: - Navigation
 
