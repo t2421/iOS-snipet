@@ -15,12 +15,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-dd-mC8">
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-dd-mC8">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LCf-dd-mC8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1dq-gc-gDj"/>
+                <constraint firstAttribute="trailing" secondItem="LCf-dd-mC8" secondAttribute="trailing" id="3IL-eF-qgW"/>
+                <constraint firstAttribute="bottom" secondItem="LCf-dd-mC8" secondAttribute="bottom" id="rc9-3c-oIm"/>
+                <constraint firstItem="LCf-dd-mC8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tWu-CR-V44"/>
+            </constraints>
         </view>
     </objects>
 </document>

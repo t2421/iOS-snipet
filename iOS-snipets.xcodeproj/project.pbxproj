@@ -13,8 +13,6 @@
 		309E5A621B5E00110082CA24 /* Sample3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A601B5E00110082CA24 /* Sample3ViewController.xib */; };
 		309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */; };
 		309E5A661B672FB10082CA24 /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */; };
-		30A036681B54C64C004AB083 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A036661B54C64C004AB083 /* BrowseViewController.swift */; };
-		30A036691B54C64C004AB083 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A036671B54C64C004AB083 /* BrowseViewController.xib */; };
 		30A0366C1B54C859004AB083 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A0366A1B54C859004AB083 /* ScrollViewController.swift */; };
 		30A0366D1B54C859004AB083 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A0366B1B54C859004AB083 /* ScrollViewController.xib */; };
 		30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEE9F1B54B737001EAF67 /* AppDelegate.swift */; };
@@ -43,8 +41,6 @@
 		309E5A601B5E00110082CA24 /* Sample3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Sample3ViewController.xib; path = sample3/Sample3ViewController.xib; sourceTree = "<group>"; };
 		309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseCodeViewController.swift; sourceTree = "<group>"; };
 		309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseCodeViewController.xib; sourceTree = "<group>"; };
-		30A036661B54C64C004AB083 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
-		30A036671B54C64C004AB083 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = "<group>"; };
 		30A0366A1B54C859004AB083 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		30A0366B1B54C859004AB083 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 		30CAEE9A1B54B737001EAF67 /* iOS-snipets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-snipets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +120,6 @@
 				309E5A601B5E00110082CA24 /* Sample3ViewController.xib */,
 				30CAEEA31B54B737001EAF67 /* Main.storyboard */,
 				30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */,
-				30A036661B54C64C004AB083 /* BrowseViewController.swift */,
-				30A036671B54C64C004AB083 /* BrowseViewController.xib */,
 				30CAEEA61B54B737001EAF67 /* Images.xcassets */,
 				30CAEEA81B54B737001EAF67 /* LaunchScreen.xib */,
 				30CAEE9D1B54B737001EAF67 /* Supporting Files */,
@@ -253,7 +247,6 @@
 				30CAEEA51B54B737001EAF67 /* Main.storyboard in Resources */,
 				309E5A661B672FB10082CA24 /* BrowseCodeViewController.xib in Resources */,
 				30CAEEAA1B54B737001EAF67 /* LaunchScreen.xib in Resources */,
-				30A036691B54C64C004AB083 /* BrowseViewController.xib in Resources */,
 				309E5A621B5E00110082CA24 /* Sample3ViewController.xib in Resources */,
 				30CAEEA71B54B737001EAF67 /* Images.xcassets in Resources */,
 				30A0366D1B54C859004AB083 /* ScrollViewController.xib in Resources */,
@@ -311,7 +304,6 @@
 				309E5A611B5E00110082CA24 /* Sample3ViewController.swift in Sources */,
 				30A0366C1B54C859004AB083 /* ScrollViewController.swift in Sources */,
 				309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */,
-				30A036681B54C64C004AB083 /* BrowseViewController.swift in Sources */,
 				309E5A5D1B5DFDAC0082CA24 /* Sample2ViewController.swift in Sources */,
 				30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */,
 				30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */,
