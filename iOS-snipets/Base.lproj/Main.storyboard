@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="MvD-SW-SDy">
             <objects>
-                <navigationController id="Zc4-If-9wo" sceneMemberID="viewController">
+                <navigationController id="Zc4-If-9wo" customClass="CustomNavigationController" customModule="iOS_snipets" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v9i-hd-Iwa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

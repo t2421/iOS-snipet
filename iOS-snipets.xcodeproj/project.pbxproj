@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309996951B730F070060CADB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309996941B730F070060CADB /* CustomNavigationController.swift */; };
 		309E5A5D1B5DFDAC0082CA24 /* Sample2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */; };
 		309E5A5E1B5DFDAC0082CA24 /* Sample2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A5C1B5DFDAC0082CA24 /* Sample2ViewController.xib */; };
 		309E5A611B5E00110082CA24 /* Sample3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A5F1B5E00110082CA24 /* Sample3ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		309996941B730F070060CADB /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample2ViewController.swift; sourceTree = "<group>"; };
 		309E5A5C1B5DFDAC0082CA24 /* Sample2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Sample2ViewController.xib; sourceTree = "<group>"; };
 		309E5A5F1B5E00110082CA24 /* Sample3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sample3ViewController.swift; path = sample3/Sample3ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				30CAEE9F1B54B737001EAF67 /* AppDelegate.swift */,
+				309996941B730F070060CADB /* CustomNavigationController.swift */,
 				30A0366A1B54C859004AB083 /* ScrollViewController.swift */,
 				30A0366B1B54C859004AB083 /* ScrollViewController.xib */,
 				309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */,
@@ -307,6 +310,7 @@
 				309E5A5D1B5DFDAC0082CA24 /* Sample2ViewController.swift in Sources */,
 				30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */,
 				30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */,
+				309996951B730F070060CADB /* CustomNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
