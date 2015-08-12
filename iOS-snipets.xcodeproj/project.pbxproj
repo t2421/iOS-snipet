@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		309996951B730F070060CADB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309996941B730F070060CADB /* CustomNavigationController.swift */; };
-		309E5A5D1B5DFDAC0082CA24 /* Sample2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */; };
-		309E5A5E1B5DFDAC0082CA24 /* Sample2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A5C1B5DFDAC0082CA24 /* Sample2ViewController.xib */; };
+		309E5A5D1B5DFDAC0082CA24 /* FontDescriptorViewControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A5B1B5DFDAC0082CA24 /* FontDescriptorViewControllerController.swift */; };
+		309E5A5E1B5DFDAC0082CA24 /* FontDescriptorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A5C1B5DFDAC0082CA24 /* FontDescriptorViewController.xib */; };
 		309E5A611B5E00110082CA24 /* Sample3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A5F1B5E00110082CA24 /* Sample3ViewController.swift */; };
 		309E5A621B5E00110082CA24 /* Sample3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A601B5E00110082CA24 /* Sample3ViewController.xib */; };
 		309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */; };
@@ -37,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		309996941B730F070060CADB /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample2ViewController.swift; sourceTree = "<group>"; };
-		309E5A5C1B5DFDAC0082CA24 /* Sample2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Sample2ViewController.xib; sourceTree = "<group>"; };
+		309E5A5B1B5DFDAC0082CA24 /* FontDescriptorViewControllerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDescriptorViewControllerController.swift; sourceTree = "<group>"; };
+		309E5A5C1B5DFDAC0082CA24 /* FontDescriptorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontDescriptorViewController.xib; sourceTree = "<group>"; };
 		309E5A5F1B5E00110082CA24 /* Sample3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sample3ViewController.swift; path = sample3/Sample3ViewController.swift; sourceTree = "<group>"; };
 		309E5A601B5E00110082CA24 /* Sample3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Sample3ViewController.xib; path = sample3/Sample3ViewController.xib; sourceTree = "<group>"; };
 		309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseCodeViewController.swift; sourceTree = "<group>"; };
@@ -115,8 +115,8 @@
 				309996941B730F070060CADB /* CustomNavigationController.swift */,
 				30A0366A1B54C859004AB083 /* ScrollViewController.swift */,
 				30A0366B1B54C859004AB083 /* ScrollViewController.xib */,
-				309E5A5B1B5DFDAC0082CA24 /* Sample2ViewController.swift */,
-				309E5A5C1B5DFDAC0082CA24 /* Sample2ViewController.xib */,
+				309E5A5B1B5DFDAC0082CA24 /* FontDescriptorViewControllerController.swift */,
+				309E5A5C1B5DFDAC0082CA24 /* FontDescriptorViewController.xib */,
 				309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */,
 				309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */,
 				309E5A5F1B5E00110082CA24 /* Sample3ViewController.swift */,
@@ -253,7 +253,7 @@
 				309E5A621B5E00110082CA24 /* Sample3ViewController.xib in Resources */,
 				30CAEEA71B54B737001EAF67 /* Images.xcassets in Resources */,
 				30A0366D1B54C859004AB083 /* ScrollViewController.xib in Resources */,
-				309E5A5E1B5DFDAC0082CA24 /* Sample2ViewController.xib in Resources */,
+				309E5A5E1B5DFDAC0082CA24 /* FontDescriptorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 				309E5A611B5E00110082CA24 /* Sample3ViewController.swift in Sources */,
 				30A0366C1B54C859004AB083 /* ScrollViewController.swift in Sources */,
 				309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */,
-				309E5A5D1B5DFDAC0082CA24 /* Sample2ViewController.swift in Sources */,
+				309E5A5D1B5DFDAC0082CA24 /* FontDescriptorViewControllerController.swift in Sources */,
 				30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */,
 				30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */,
 				309996951B730F070060CADB /* CustomNavigationController.swift in Sources */,

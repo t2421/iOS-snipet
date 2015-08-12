@@ -15,13 +15,12 @@ class MainViewController: UITableViewController {
         [
             "itemTitle":"Scroll",
             "itemDescription":"UIScrollViewの可変タイプ",
-            "itemPrefix":"Scroll",
+            "itemPrefix":"Scroll"
         ],
         [
-            "itemTitle":"Sample2",
-            "itemDescription":"SampleDiscription Here",
-            "itemPrefix":"Sample2",
-            "url":"hoge"
+            "itemTitle":"FontDescriptor",
+            "itemDescription":"FontDescriptor Here",
+            "itemPrefix":"FontDescriptor"
         ],
         [
             "itemTitle":"Sample3",
