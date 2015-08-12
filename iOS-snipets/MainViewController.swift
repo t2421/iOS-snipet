@@ -19,14 +19,13 @@ class MainViewController: UITableViewController {
         ],
         [
             "itemTitle":"FontDescriptor",
-            "itemDescription":"FontDescriptor Here",
+            "itemDescription":"UIFontDescriptorを使った動的なFont属性の変更",
             "itemPrefix":"FontDescriptor"
         ],
         [
-            "itemTitle":"Sample3",
-            "itemDescription":"SampleDiscription Here",
-            "itemPrefix":"Sample3",
-            "url":"hoge"
+            "itemTitle":"FontName",
+            "itemDescription":"iOSに入っているFontの一覧とその見え方",
+            "itemPrefix":"FontName"
         ]
     ]
     
