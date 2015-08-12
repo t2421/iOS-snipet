@@ -26,6 +26,11 @@ class MainViewController: UITableViewController {
             "itemTitle":"FontName",
             "itemDescription":"iOSに入っているFontの一覧とその見え方",
             "itemPrefix":"FontName"
+        ],
+        [
+            "itemTitle":"Gesture",
+            "itemDescription":"GestureRecognizerのテスト",
+            "itemPrefix":"Gesture"
         ]
     ]
     

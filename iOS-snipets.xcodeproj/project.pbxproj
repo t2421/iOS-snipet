@@ -13,6 +13,8 @@
 		305C69731B7AF8C4005EBCC6 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69711B7AF8C4005EBCC6 /* ScrollViewController.xib */; };
 		305C69761B7AF8E3005EBCC6 /* FontNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C69741B7AF8E3005EBCC6 /* FontNameViewController.swift */; };
 		305C69771B7AF8E3005EBCC6 /* FontNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69751B7AF8E3005EBCC6 /* FontNameViewController.xib */; };
+		305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C69781B7B02E2005EBCC6 /* GestureViewController.swift */; };
+		305C697B1B7B02E2005EBCC6 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69791B7B02E2005EBCC6 /* GestureViewController.xib */; };
 		309996951B730F070060CADB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309996941B730F070060CADB /* CustomNavigationController.swift */; };
 		309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */; };
 		309E5A661B672FB10082CA24 /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */; };
@@ -42,6 +44,8 @@
 		305C69711B7AF8C4005EBCC6 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScrollViewController.xib; path = samples/ScrollViewController.xib; sourceTree = "<group>"; };
 		305C69741B7AF8E3005EBCC6 /* FontNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontNameViewController.swift; path = samples/FontNameViewController.swift; sourceTree = "<group>"; };
 		305C69751B7AF8E3005EBCC6 /* FontNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FontNameViewController.xib; path = samples/FontNameViewController.xib; sourceTree = "<group>"; };
+		305C69781B7B02E2005EBCC6 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureViewController.swift; path = samples/GestureViewController.swift; sourceTree = "<group>"; };
+		305C69791B7B02E2005EBCC6 /* GestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GestureViewController.xib; path = samples/GestureViewController.xib; sourceTree = "<group>"; };
 		309996941B730F070060CADB /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseCodeViewController.swift; sourceTree = "<group>"; };
 		309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseCodeViewController.xib; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				305C696C1B7AF88F005EBCC6 /* FontDescriptorViewController.xib */,
 				305C696D1B7AF88F005EBCC6 /* FontDescriptorViewControllerController.swift */,
 				309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */,
+				305C69781B7B02E2005EBCC6 /* GestureViewController.swift */,
+				305C69791B7B02E2005EBCC6 /* GestureViewController.xib */,
 				305C69741B7AF8E3005EBCC6 /* FontNameViewController.swift */,
 				305C69751B7AF8E3005EBCC6 /* FontNameViewController.xib */,
 				309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */,
@@ -247,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305C697B1B7B02E2005EBCC6 /* GestureViewController.xib in Resources */,
 				30CAEEA51B54B737001EAF67 /* Main.storyboard in Resources */,
 				309E5A661B672FB10082CA24 /* BrowseCodeViewController.xib in Resources */,
 				30CAEEAA1B54B737001EAF67 /* LaunchScreen.xib in Resources */,
@@ -308,6 +315,7 @@
 				305C69761B7AF8E3005EBCC6 /* FontNameViewController.swift in Sources */,
 				305C69721B7AF8C4005EBCC6 /* ScrollViewController.swift in Sources */,
 				309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */,
+				305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */,
 				30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */,
 				30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */,
 				309996951B730F070060CADB /* CustomNavigationController.swift in Sources */,
