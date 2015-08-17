@@ -31,6 +31,11 @@ class MainViewController: UITableViewController {
             "itemTitle":"Gesture",
             "itemDescription":"GestureRecognizerのテスト",
             "itemPrefix":"Gesture"
+        ],
+        [
+            "itemTitle":"DynamicTable",
+            "itemDescription":"DynamicTableのテスト",
+            "itemPrefix":"DynamicTable"
         ]
     ]
     
