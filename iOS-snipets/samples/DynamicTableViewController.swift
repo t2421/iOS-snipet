@@ -10,6 +10,7 @@ import UIKit
 
 class DynamicTableViewController: UITableViewController {
     var count = 0;
+    let listSectionTitle:String = "ALL LIST";
     var items:Array<Dictionary<String,String>> = [
         [
             "name":"Wao1"
@@ -57,6 +58,9 @@ class DynamicTableViewController: UITableViewController {
         count++;
         
     }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -69,17 +73,46 @@ class DynamicTableViewController: UITableViewController {
         return items.count;
     }
     
-    //headerの上書き
+    //headerのスタイルを上書き
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        var screenW = UIScreen.mainScreen().bounds.size.width
+        let view:UIView = UIView();
+        view.backgroundColor = UIColor.grayColor();
+        
+        view.frame.size.width = screenW;
+        
         let label = UILabel();
+        label.frame.origin.x = 15;
+        label.frame.origin.y = 2;
         label.font = UIFont.systemFontOfSize(15.0);
-        label.text = "ALL List";
-        return label;
+        label.textColor = UIColor.whiteColor();
+        label.text = listSectionTitle;
+        label.sizeToFit();
+        view.addSubview(label);
+        view.frame.size.height = label.frame.size.height;
+        
+        return view;
     }
     
     //headerの名前
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "All List";
+        return listSectionTitle;
+    }
+    
+    
+    
+    //編集時にセルを移動する
+    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true;
+    }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath:destinationIndexPath);
+        
+        var itemToMove = self.items[sourceIndexPath.row];
+        self.items.removeAtIndex(sourceIndexPath.row);
+        self.items.insert(itemToMove, atIndex: destinationIndexPath.row);
+        
     }
 
     
@@ -93,52 +126,8 @@ class DynamicTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        tableView.editing = true;
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
     
 }
