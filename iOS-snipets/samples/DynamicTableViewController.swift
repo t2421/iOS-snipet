@@ -9,7 +9,7 @@
 import UIKit
 
 class DynamicTableViewController: UITableViewController {
-    let mode = "delete";
+    var count = 0;
     var items:Array<Dictionary<String,String>> = [
         [
             "name":"Wao1"
@@ -33,11 +33,8 @@ class DynamicTableViewController: UITableViewController {
         
         //セルの追加モードかセルの削除モードかを切り替える。（navigationBarに戻るボタンに使っているため、片方しか使えない）
         addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addItem:");
-        self.navigationItem.rightBarButtonItem = addButton;
         
-        if(mode == "delete"){
-            self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        }
+        self.navigationItem.rightBarButtonItems = [addButton,self.editButtonItem()];
         
     }
     
@@ -55,10 +52,11 @@ class DynamicTableViewController: UITableViewController {
     
     //セルの追加
     func addItem(sender:UIBarButtonItem){
-        var item = ["name":"thankyu"];
+        var item = ["name":"add"+String(count)];
         let indexPathToInsert = NSIndexPath(forRow: 0, inSection: 0);
         items.insert(item, atIndex: indexPathToInsert.row);
         self.tableView.insertRowsAtIndexPaths([indexPathToInsert], withRowAnimation: UITableViewRowAnimation.Automatic);
+        count++;
         
     }
     override func didReceiveMemoryWarning() {
