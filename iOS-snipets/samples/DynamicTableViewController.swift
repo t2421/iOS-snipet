@@ -30,8 +30,6 @@ class DynamicTableViewController: UITableViewController {
     var addButton:UIBarButtonItem!;
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //セルの追加モードかセルの削除モードかを切り替える。（navigationBarに戻るボタンに使っているため、片方しか使えない）
         addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addItem:");
         
         self.navigationItem.rightBarButtonItems = [addButton,self.editButtonItem()];
