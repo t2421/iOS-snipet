@@ -15,32 +15,38 @@ class MainViewController: UITableViewController {
         [
             "itemTitle":"Scroll",
             "itemDescription":"UIScrollViewの可変タイプ",
-            "itemPrefix":"Scroll"
+            "itemPrefix":"Scroll",
+            "isStoryboard":"0"
         ],
         [
             "itemTitle":"FontDescriptor",
             "itemDescription":"UIFontDescriptorを使った動的なFont属性の変更",
-            "itemPrefix":"FontDescriptor"
+            "itemPrefix":"FontDescriptor",
+            "isStoryboard":"0"
         ],
         [
             "itemTitle":"FontName",
             "itemDescription":"iOSに入っているFontの一覧とその見え方",
-            "itemPrefix":"FontName"
+            "itemPrefix":"FontName",
+            "isStoryboard":"0"
         ],
         [
             "itemTitle":"Gesture",
             "itemDescription":"GestureRecognizerのテスト",
-            "itemPrefix":"Gesture"
+            "itemPrefix":"Gesture",
+            "isStoryboard":"0"
         ],
         [
             "itemTitle":"DynamicTable",
             "itemDescription":"DynamicTableのテスト",
-            "itemPrefix":"DynamicTable"
+            "itemPrefix":"DynamicTable",
+            "isStoryboard":"0"
         ],
         [
             "itemTitle":"StaticTable",
             "itemDescription":"StaticTableのテスト",
-            "itemPrefix":"StaticTable"
+            "itemPrefix":"StaticTable",
+            "isStoryboard":"1"
         ]
     ]
     
@@ -94,18 +100,26 @@ class MainViewController: UITableViewController {
         //どうやらbundlenameの-は_に置き換えられてしまうらしい
         myAppName = myAppName.stringByReplacingOccurrencesOfString("-", withString: "_", options: [], range: nil)
         let viewControllerClass: AnyClass! = NSClassFromString(myAppName+"."+className)
+        var view:UIViewController?
         
-        //Type型とAnyClass型の違いがよくわからん・・・
-        let objType:UIViewController.Type = viewControllerClass as! UIViewController.Type
-        let view = objType.init(nibName: className, bundle: nil)
+        if(info["isStoryboard"] == "1"){
+            let storyboard:UIStoryboard = UIStoryboard(name: className, bundle: nil)
+            view = storyboard.instantiateViewControllerWithIdentifier(className)
+            
+        }else{
+            //Type型とAnyClass型の違いがよくわからん・・・
+            let objType:UIViewController.Type = viewControllerClass as! UIViewController.Type
+            view = objType.init(nibName: className, bundle: nil)
+        }
+        
 
-        view.navigationItem.title = info["itemTitle"]
+        view!.navigationItem.title = info["itemTitle"]
         
         currentClassName = className
         
         let barButtonItem = UIBarButtonItem(title: "CODE", style: UIBarButtonItemStyle.Plain, target: self, action: "codeButtonTapped:")
-        view.navigationItem.rightBarButtonItem = barButtonItem
-        self.navigationController?.pushViewController(view, animated: true)
+        view!.navigationItem.rightBarButtonItem = barButtonItem
+        self.navigationController?.pushViewController(view!, animated: true)
     }
     
     func codeButtonTapped(sender:UIButton){
