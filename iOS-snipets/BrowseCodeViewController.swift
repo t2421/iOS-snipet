@@ -33,10 +33,10 @@ class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
             return;
         }
         
-        println("start")
+        print("start")
         
-        var url = NSURL(string: self.urlString!)
-        var request = NSURLRequest(URL: url!)
+        let url = NSURL(string: self.urlString!)
+        let request = NSURLRequest(URL: url!)
         self.webview.loadRequest(request)
         
     }
@@ -45,7 +45,7 @@ class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
         SVProgressHUD.dismiss()
     }
     
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         SVProgressHUD.dismiss()
     }
     /*

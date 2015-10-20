@@ -33,7 +33,7 @@ class FontDescriptorViewController: UIViewController {
         
         
         //sizeに0.0以外を入れるとそちらのサイズがdescriptorに設定されているサイズより優先される。
-        var helveticaBoldFont  = UIFont(descriptor: helveticaNeueFamily, size: 0.0);
+        let helveticaBoldFont  = UIFont(descriptor: helveticaNeueFamily, size: 0.0);
         label.font = helveticaBoldFont;
         label.sizeToFit();
         
@@ -43,7 +43,7 @@ class FontDescriptorViewController: UIViewController {
     func loop(){
         fontSize += 1.0;
         helveticaNeueFamily =  helveticaNeueFamily.fontDescriptorWithSize(fontSize);
-        var helveticaBoldFont  = UIFont(descriptor: helveticaNeueFamily, size: 0.0);
+        let helveticaBoldFont  = UIFont(descriptor: helveticaNeueFamily, size: 0.0);
         label.font = helveticaBoldFont;
         label.text = fontSize.description;
         label.sizeToFit();

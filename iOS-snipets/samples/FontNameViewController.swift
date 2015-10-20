@@ -16,7 +16,7 @@ class FontNameViewController: UIViewController,UITableViewDataSource,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         fontList = UIFont.familyNames();
-        println(UIFont.familyNames());
+        print(UIFont.familyNames());
         tableView.delegate = self;
         tableView.dataSource = self;
         // Do any additional setup after loading the view.

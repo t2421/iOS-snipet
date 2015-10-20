@@ -36,6 +36,11 @@ class MainViewController: UITableViewController {
             "itemTitle":"DynamicTable",
             "itemDescription":"DynamicTableのテスト",
             "itemPrefix":"DynamicTable"
+        ],
+        [
+            "itemTitle":"StaticTable",
+            "itemDescription":"StaticTableのテスト",
+            "itemPrefix":"StaticTable"
         ]
     ]
     
@@ -46,7 +51,7 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(NSStringFromClass(self.dynamicType))
+        print(NSStringFromClass(self.dynamicType))
 
     }
 
@@ -69,7 +74,7 @@ class MainViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         
         let info = self.items[indexPath.row]
         cell.textLabel!.text = info["itemTitle"]!
@@ -82,30 +87,30 @@ class MainViewController: UITableViewController {
         let info = self.items[indexPath.row]
         
         //@see http://okenprog.hatenablog.com/entry/2015/03/28/015710
-        var className = info["itemPrefix"]! + "ViewController"
-        var name = ""
+        let className = info["itemPrefix"]! + "ViewController"
+
         var myAppName:String = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as! String
         
         //どうやらbundlenameの-は_に置き換えられてしまうらしい
-        myAppName = myAppName.stringByReplacingOccurrencesOfString("-", withString: "_", options: nil, range: nil)
+        myAppName = myAppName.stringByReplacingOccurrencesOfString("-", withString: "_", options: [], range: nil)
         let viewControllerClass: AnyClass! = NSClassFromString(myAppName+"."+className)
         
         //Type型とAnyClass型の違いがよくわからん・・・
         let objType:UIViewController.Type = viewControllerClass as! UIViewController.Type
-        let view = objType(nibName: className, bundle: nil)
+        let view = objType.init(nibName: className, bundle: nil)
 
         view.navigationItem.title = info["itemTitle"]
         
         currentClassName = className
         
-        var barButtonItem = UIBarButtonItem(title: "CODE", style: UIBarButtonItemStyle.Plain, target: self, action: "codeButtonTapped:")
+        let barButtonItem = UIBarButtonItem(title: "CODE", style: UIBarButtonItemStyle.Plain, target: self, action: "codeButtonTapped:")
         view.navigationItem.rightBarButtonItem = barButtonItem
         self.navigationController?.pushViewController(view, animated: true)
     }
     
     func codeButtonTapped(sender:UIButton){
-        var str = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/" + self.currentClassName + ".swift"
-        var codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: nil)
+        let str = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/" + self.currentClassName + ".swift"
+        let codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: nil)
        // var codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: true)
         codeView.urlString = str
         codeView.navigationItem.title = self.currentClassName

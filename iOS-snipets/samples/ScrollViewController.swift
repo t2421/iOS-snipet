@@ -22,8 +22,8 @@ class ScrollViewController: UIViewController,UIScrollViewDelegate {
         super.viewDidLoad()
         
         //self.view.frame.sizeの値は使えない
-        var screenW = UIScreen.mainScreen().bounds.size.width
-        var screenH = UIScreen.mainScreen().bounds.size.height
+        let screenW = UIScreen.mainScreen().bounds.size.width
+        let screenH = UIScreen.mainScreen().bounds.size.height
         
         //storyboardで配置されているものはここでは幅が設定できない
         //すべてプログラムでレイアウト
@@ -78,8 +78,8 @@ class ScrollViewController: UIViewController,UIScrollViewDelegate {
         var h:CGFloat = 0
         let subViews = containerView.subviews
         for view in subViews{
-            var frameWidth = view.frame.origin.x + view.frame.size.width
-            var frameHeight = view.frame.origin.y + view.frame.size.height
+            let frameWidth = view.frame.origin.x + view.frame.size.width
+            let frameHeight = view.frame.origin.y + view.frame.size.height
             w = max(frameWidth, w)
             h = max(frameHeight,h)
             

@@ -51,7 +51,7 @@ class DynamicTableViewController: UITableViewController {
     
     //セルの追加
     func addItem(sender:UIBarButtonItem){
-        var item = ["name":"add"+String(count)];
+        let item = ["name":"add"+String(count)];
         let indexPathToInsert = NSIndexPath(forRow: 0, inSection: 0);
         items.insert(item, atIndex: indexPathToInsert.row);
         self.tableView.insertRowsAtIndexPaths([indexPathToInsert], withRowAnimation: UITableViewRowAnimation.Automatic);
@@ -75,7 +75,7 @@ class DynamicTableViewController: UITableViewController {
     
     //headerのスタイルを上書き
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        var screenW = UIScreen.mainScreen().bounds.size.width
+        let screenW = UIScreen.mainScreen().bounds.size.width
         let view:UIView = UIView();
         view.backgroundColor = UIColor.grayColor();
         
@@ -109,7 +109,7 @@ class DynamicTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         tableView.moveRowAtIndexPath(sourceIndexPath, toIndexPath:destinationIndexPath);
         
-        var itemToMove = self.items[sourceIndexPath.row];
+        let itemToMove = self.items[sourceIndexPath.row];
         self.items.removeAtIndex(sourceIndexPath.row);
         self.items.insert(itemToMove, atIndex: destinationIndexPath.row);
         

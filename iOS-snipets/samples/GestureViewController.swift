@@ -34,23 +34,23 @@ class GestureViewController: UIViewController {
     }
     
     func tapGesture(sender:UITapGestureRecognizer){
-        println("tapGesture");
+        print("tapGesture");
         
         //引数のviewを基準とした位置
-        println(sender.locationInView(self.view));
+        print(sender.locationInView(self.view));
     }
     
     func pinchGesture(sender:UIPinchGestureRecognizer){
-        println("pinchGesture");
+        print("pinchGesture");
         
         //一定の値が返ってくる？中心？
-        println(sender.locationInView(self.view));
+        print(sender.locationInView(self.view));
         
         //pinchし始めた位置からどれくらいscaleしたかという値が返ってくる
-        println("scale--:"+sender.scale.description);
+        print("scale--:"+sender.scale.description);
         
         //pinchした速度が返ってくる。１フレーム前との差分？
-        println("velocity--:"+sender.velocity.description);
+        print("velocity--:"+sender.velocity.description);
     }
     
     override func didReceiveMemoryWarning() {
