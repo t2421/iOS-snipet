@@ -47,6 +47,12 @@ class MainViewController: UITableViewController {
             "itemDescription":"StaticTableのテスト",
             "itemPrefix":"StaticTable",
             "isStoryboard":"1"
+        ],
+        [
+            "itemTitle":"BeaconTest",
+            "itemDescription":"iBeaconのテスト",
+            "itemPrefix":"BeaconTest",
+            "isStoryboard":"0"
         ]
     ]
     

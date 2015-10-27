@@ -15,6 +15,9 @@
 		305C69771B7AF8E3005EBCC6 /* FontNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69751B7AF8E3005EBCC6 /* FontNameViewController.xib */; };
 		305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C69781B7B02E2005EBCC6 /* GestureViewController.swift */; };
 		305C697B1B7B02E2005EBCC6 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69791B7B02E2005EBCC6 /* GestureViewController.xib */; };
+		30616CE01BDF2EB800D0B864 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30616CDF1BDF2EB800D0B864 /* CoreLocation.framework */; };
+		30616CE51BDF308000D0B864 /* BeaconTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30616CE31BDF308000D0B864 /* BeaconTestViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		30616CE61BDF308000D0B864 /* BeaconTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30616CE41BDF308000D0B864 /* BeaconTestViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		308970DF1B821467000E681E /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308970DD1B821467000E681E /* DynamicTableViewController.swift */; };
 		308970E01B821467000E681E /* DynamicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308970DE1B821467000E681E /* DynamicTableViewController.xib */; };
 		309762FB1BD5F05200675549 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309762F91BD5F05200675549 /* StaticTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +54,9 @@
 		305C69751B7AF8E3005EBCC6 /* FontNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FontNameViewController.xib; path = samples/FontNameViewController.xib; sourceTree = "<group>"; };
 		305C69781B7B02E2005EBCC6 /* GestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GestureViewController.swift; path = samples/GestureViewController.swift; sourceTree = "<group>"; };
 		305C69791B7B02E2005EBCC6 /* GestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GestureViewController.xib; path = samples/GestureViewController.xib; sourceTree = "<group>"; };
+		30616CDF1BDF2EB800D0B864 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		30616CE31BDF308000D0B864 /* BeaconTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTestViewController.swift; sourceTree = "<group>"; };
+		30616CE41BDF308000D0B864 /* BeaconTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconTestViewController.xib; sourceTree = "<group>"; };
 		308970DD1B821467000E681E /* DynamicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTableViewController.swift; path = samples/DynamicTableViewController.swift; sourceTree = "<group>"; };
 		308970DE1B821467000E681E /* DynamicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicTableViewController.xib; path = samples/DynamicTableViewController.xib; sourceTree = "<group>"; };
 		309762F91BD5F05200675549 /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticTableViewController.swift; path = samples/StaticTableViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30616CE01BDF2EB800D0B864 /* CoreLocation.framework in Frameworks */,
 				DF989227DFC324AB7E27536F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +104,7 @@
 		092E5EB3D5D9F980782AF983 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30616CDF1BDF2EB800D0B864 /* CoreLocation.framework */,
 				8D3307E75FE2E7F8FD057F12 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -144,6 +152,8 @@
 				309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */,
 				30CAEEA31B54B737001EAF67 /* Main.storyboard */,
 				30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */,
+				30616CE31BDF308000D0B864 /* BeaconTestViewController.swift */,
+				30616CE41BDF308000D0B864 /* BeaconTestViewController.xib */,
 				30CAEEA61B54B737001EAF67 /* Images.xcassets */,
 				30CAEEA81B54B737001EAF67 /* LaunchScreen.xib */,
 				30CAEE9D1B54B737001EAF67 /* Supporting Files */,
@@ -281,6 +291,7 @@
 				30CAEEA71B54B737001EAF67 /* Images.xcassets in Resources */,
 				305C69771B7AF8E3005EBCC6 /* FontNameViewController.xib in Resources */,
 				305C69731B7AF8C4005EBCC6 /* ScrollViewController.xib in Resources */,
+				30616CE61BDF308000D0B864 /* BeaconTestViewController.xib in Resources */,
 				309762FC1BD5F05200675549 /* StaticTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +350,7 @@
 				309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */,
 				305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */,
 				30CAEEA01B54B737001EAF67 /* AppDelegate.swift in Sources */,
+				30616CE51BDF308000D0B864 /* BeaconTestViewController.swift in Sources */,
 				30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */,
 				308970DF1B821467000E681E /* DynamicTableViewController.swift in Sources */,
 				309996951B730F070060CADB /* CustomNavigationController.swift in Sources */,

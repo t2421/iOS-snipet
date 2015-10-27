@@ -18,6 +18,10 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>hello swift</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>hello</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>
