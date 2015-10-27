@@ -5,6 +5,7 @@
 //  Created by taigakiyotaki on 2015/10/27.
 //  Copyright © 2015年 taigakiyotaki. All rights reserved.
 
+//  macbook retina をbeconとして使用。nodeのbleaconを使用
 //  @see http://qiita.com/ftsan/items/b3a04d30cd91c11aeea1
 //  @see http://qiita.com/oggata/items/5de43d71692d1abcff7c
 //  必ずアプリの設定で位置情報の利用を許可すること。そうしないと許可認証はできるが何も動作しない
