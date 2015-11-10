@@ -8,30 +8,26 @@
 
 import UIKit
 import Socket_IO_Client_Swift
-class SocketioViewController: UIViewController {
 
+class SocketioViewController: UIViewController {
+    
+    //ここでインスタンスを生成すると上手くいかない。
+    var socket:SocketIOClient!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let socket = SocketIOClient(socketURL: "localhost:4567", options: [.Log(false), .ForcePolling(true)])
-        
-        socket.on("connect") {data, ack in
-            print("socket connected")
-            
+        // ここでインスタンスを生成してsocket通信する
+        socket = SocketIOClient(socketURL: "localhost:4567", options: [.Log(true), .ForcePolling(true)])
+        socket.on("from_client") { data in
+            print(data)
         }
+        socket.on("disconnect") { data in
+            print("socket disconnected!!")
+        }
+        print(socket)
+        socket.connect()        // Do any additional setup after loading the view.
+        print("wao!")
         
-//        socket.on("currentAmount") {data, ack in
-//            if let cur = data[0] as? Double {
-//                socket.emitWithAck("canUpdate", cur)(timeoutAfter: 0) {data in
-//                    socket.emit("update", ["amount": cur + 2.50])
-//                }
-//                
-//                ack?.with("Got your currentAmount", "dude")
-//            }
-//        }
-        
-        socket.connect()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
