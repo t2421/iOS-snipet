@@ -16,13 +16,13 @@
 		305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305C69781B7B02E2005EBCC6 /* GestureViewController.swift */; };
 		305C697B1B7B02E2005EBCC6 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305C69791B7B02E2005EBCC6 /* GestureViewController.xib */; };
 		30616CE01BDF2EB800D0B864 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30616CDF1BDF2EB800D0B864 /* CoreLocation.framework */; };
-		30616CE51BDF308000D0B864 /* BeaconTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30616CE31BDF308000D0B864 /* BeaconTestViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		30616CE61BDF308000D0B864 /* BeaconTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30616CE41BDF308000D0B864 /* BeaconTestViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		30616CE51BDF308000D0B864 /* BeaconTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30616CE31BDF308000D0B864 /* BeaconTestViewController.swift */; };
+		30616CE61BDF308000D0B864 /* BeaconTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30616CE41BDF308000D0B864 /* BeaconTestViewController.xib */; };
 		308970DF1B821467000E681E /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308970DD1B821467000E681E /* DynamicTableViewController.swift */; };
 		308970E01B821467000E681E /* DynamicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308970DE1B821467000E681E /* DynamicTableViewController.xib */; };
-		309762FB1BD5F05200675549 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309762F91BD5F05200675549 /* StaticTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		309762FC1BD5F05200675549 /* StaticTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309762FA1BD5F05200675549 /* StaticTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		309763381BD5F38C00675549 /* StaticTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309763371BD5F38C00675549 /* StaticTableViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		309762FB1BD5F05200675549 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309762F91BD5F05200675549 /* StaticTableViewController.swift */; };
+		309762FC1BD5F05200675549 /* StaticTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309762FA1BD5F05200675549 /* StaticTableViewController.xib */; };
+		309763381BD5F38C00675549 /* StaticTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309763371BD5F38C00675549 /* StaticTableViewController.storyboard */; };
 		309996951B730F070060CADB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309996941B730F070060CADB /* CustomNavigationController.swift */; };
 		309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309E5A631B672FB10082CA24 /* BrowseCodeViewController.swift */; };
 		309E5A661B672FB10082CA24 /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309E5A641B672FB10082CA24 /* BrowseCodeViewController.xib */; };
@@ -32,7 +32,7 @@
 		30CAEEAA1B54B737001EAF67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEEA81B54B737001EAF67 /* LaunchScreen.xib */; };
 		30CAEEB61B54B737001EAF67 /* iOS_snipetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEEB51B54B737001EAF67 /* iOS_snipetsTests.swift */; };
 		30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */; };
-		DF989227DFC324AB7E27536F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3307E75FE2E7F8FD057F12 /* libPods.a */; };
+		719D7F24D686AF324968848D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C10480D3A783718F7708EBD /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30D7EF0E1B6742970068E231 /* iOS-snipets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-snipets-Bridging-Header.h"; sourceTree = "<group>"; };
 		630F8DEBC0E4678A30B10750 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		8D3307E75FE2E7F8FD057F12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C10480D3A783718F7708EBD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA36AE0550433EDE6E4B0F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30616CE01BDF2EB800D0B864 /* CoreLocation.framework in Frameworks */,
-				DF989227DFC324AB7E27536F /* libPods.a in Frameworks */,
+				719D7F24D686AF324968848D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				30616CDF1BDF2EB800D0B864 /* CoreLocation.framework */,
-				8D3307E75FE2E7F8FD057F12 /* libPods.a */,
+				8C10480D3A783718F7708EBD /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,6 +208,7 @@
 				30CAEE971B54B737001EAF67 /* Frameworks */,
 				30CAEE981B54B737001EAF67 /* Resources */,
 				65A8C81388B0B2EE510A5F93 /* Copy Pods Resources */,
+				761BB22448F347CFA91EFF8A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +335,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		761BB22448F347CFA91EFF8A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -481,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 630F8DEBC0E4678A30B10750 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -499,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCA36AE0550433EDE6E4B0F3 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

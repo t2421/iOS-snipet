@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class BrowseCodeViewController: UIViewController,UIWebViewDelegate {
 
     @IBOutlet weak var webview: UIWebView!

@@ -10,7 +10,7 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-    
+    let GIT_HUB_URL = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/"
     let items:Array<Dictionary<String,String>> = [
         [
             "itemTitle":"Scroll",
@@ -129,7 +129,7 @@ class MainViewController: UITableViewController {
     }
     
     func codeButtonTapped(sender:UIButton){
-        let str = "https://github.com/t2421/iOS-snipet/blob/master/iOS-snipets/" + self.currentClassName + ".swift"
+        let str = GIT_HUB_URL + self.currentClassName + ".swift"
         let codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: nil)
        // var codeView = BrowseCodeViewController(nibName: "BrowseCodeViewController", bundle: true)
         codeView.urlString = str
