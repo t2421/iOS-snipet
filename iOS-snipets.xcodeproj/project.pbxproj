@@ -32,6 +32,8 @@
 		30CAEEAA1B54B737001EAF67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEEA81B54B737001EAF67 /* LaunchScreen.xib */; };
 		30CAEEB61B54B737001EAF67 /* iOS_snipetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEEB51B54B737001EAF67 /* iOS_snipetsTests.swift */; };
 		30CAEEC01B54B8FC001EAF67 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */; };
+		30F9FB6E1BF19C38001754A7 /* SocketioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F9FB6C1BF19C38001754A7 /* SocketioViewController.swift */; };
+		30F9FB6F1BF19C38001754A7 /* SocketioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F9FB6D1BF19C38001754A7 /* SocketioViewController.xib */; };
 		719D7F24D686AF324968848D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C10480D3A783718F7708EBD /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		30CAEEB51B54B737001EAF67 /* iOS_snipetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_snipetsTests.swift; sourceTree = "<group>"; };
 		30CAEEBF1B54B8FC001EAF67 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		30D7EF0E1B6742970068E231 /* iOS-snipets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-snipets-Bridging-Header.h"; sourceTree = "<group>"; };
+		30F9FB6C1BF19C38001754A7 /* SocketioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketioViewController.swift; path = "iOS-snipets/samples/SocketioViewController.swift"; sourceTree = "<group>"; };
+		30F9FB6D1BF19C38001754A7 /* SocketioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SocketioViewController.xib; path = "iOS-snipets/samples/SocketioViewController.xib"; sourceTree = "<group>"; };
 		630F8DEBC0E4678A30B10750 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8C10480D3A783718F7708EBD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA36AE0550433EDE6E4B0F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		30CAEE911B54B737001EAF67 = {
 			isa = PBXGroup;
 			children = (
+				30F9FB6C1BF19C38001754A7 /* SocketioViewController.swift */,
+				30F9FB6D1BF19C38001754A7 /* SocketioViewController.xib */,
 				30CAEE9C1B54B737001EAF67 /* iOS-snipets */,
 				30CAEEB21B54B737001EAF67 /* iOS-snipetsTests */,
 				30CAEE9B1B54B737001EAF67 /* Products */,
@@ -282,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F9FB6F1BF19C38001754A7 /* SocketioViewController.xib in Resources */,
 				305C697B1B7B02E2005EBCC6 /* GestureViewController.xib in Resources */,
 				308970E01B821467000E681E /* DynamicTableViewController.xib in Resources */,
 				30CAEEA51B54B737001EAF67 /* Main.storyboard in Resources */,
@@ -362,6 +369,7 @@
 				305C696F1B7AF88F005EBCC6 /* FontDescriptorViewControllerController.swift in Sources */,
 				305C69761B7AF8E3005EBCC6 /* FontNameViewController.swift in Sources */,
 				305C69721B7AF8C4005EBCC6 /* ScrollViewController.swift in Sources */,
+				30F9FB6E1BF19C38001754A7 /* SocketioViewController.swift in Sources */,
 				309762FB1BD5F05200675549 /* StaticTableViewController.swift in Sources */,
 				309E5A651B672FB10082CA24 /* BrowseCodeViewController.swift in Sources */,
 				305C697A1B7B02E2005EBCC6 /* GestureViewController.swift in Sources */,

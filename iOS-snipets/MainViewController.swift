@@ -53,6 +53,12 @@ class MainViewController: UITableViewController {
             "itemDescription":"iBeaconのテスト",
             "itemPrefix":"BeaconTest",
             "isStoryboard":"0"
+        ],
+        [
+            "itemTitle":"Socketio",
+            "itemDescription":"Socketioのテスト",
+            "itemPrefix":"Socketio",
+            "isStoryboard":"0"
         ]
     ]
     
